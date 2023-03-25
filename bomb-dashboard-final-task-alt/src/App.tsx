@@ -36,7 +36,7 @@ const NoMatch = () => (
 );
 
 const App: React.FC = () => {
-  // Clear localStorage for mobile users
+  
   if (typeof localStorage.version_app === 'undefined' || localStorage.version_app !== '1.1') {
     localStorage.clear();
     localStorage.setItem('connectorId', '');
@@ -68,7 +68,7 @@ const App: React.FC = () => {
             <Route path="/supply">
               <Supply />
             </Route>
-            <Route path="/Dashboard">
+            <Route path="/dashboard">
               <Dashboard />
             </Route>
 
