@@ -162,6 +162,9 @@ const Nav = () => {
               <Link to="/bond" className={'navLink ' + classes.link}>
                 Bond
               </Link>
+              <Link to="/dashboard" className={'navLink ' + classes.link}>
+                Dashboard
+              </Link>
 
 
               
