@@ -106,7 +106,7 @@ const Show = ({ id, img }) => {
     <div className="show_container">
       <div className="head-show">
         <div className="head-img-show">
-          <img src={img} />
+          <img src={img} alt='img'/>
         </div>
 
         <div className="info-show">
