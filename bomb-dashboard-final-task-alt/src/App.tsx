@@ -36,7 +36,6 @@ const NoMatch = () => (
 );
 
 const App: React.FC = () => {
-  
   if (typeof localStorage.version_app === 'undefined' || localStorage.version_app !== '1.1') {
     localStorage.clear();
     localStorage.setItem('connectorId', '');
