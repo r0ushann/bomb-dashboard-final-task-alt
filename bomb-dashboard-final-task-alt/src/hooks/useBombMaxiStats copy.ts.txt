@@ -1,0 +1,24 @@
+import { useEffect, useState } from 'react';
+import { bombMaxi } from '../services/graph/fetchers';
+import { MaxiInfo } from '../bomb-finance/types';
+import useRefresh from './useRefresh';
+import { ApolloQueryResult } from '@apollo/client';
+
+const useBombMaxiStats = (poolId: string | null | undefined) => {
+  const [stat, setStat] = useState<ApolloQueryResult<any> | MaxiInfo | null>();
+  const { slowRefresh } = useRefresh();
+
+  useEffect(() => {
+    async function fetchBombMaxiPrice() {
+      if (poolId) {
+        const BombMaxi = await bombMaxi(poolId);
+        if (BombMaxi) setStat(BombMaxi.data.pool);
+      }
+    }
+    fetchBombMaxiPrice();
+  }, [setStat, slowRefresh, poolId]);
+
+  return stat;
+};
+
+export default useBombMaxiStats;
