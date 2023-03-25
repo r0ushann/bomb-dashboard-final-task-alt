@@ -1,0 +1,232 @@
+  
+  .dashboard_jt .invest-strategy .strategy-col .read_link a {
+    text-align: right;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    
+  
+    display: flex;
+    text-decoration-line: underline;
+    font-feature-settings: 'liga' off;
+  
+    color: #9ee6ff;
+  }
+  
+  .btn-invest {
+    box-sizing: border-box;
+    height: 40px;
+  
+    background: radial-gradient(
+        59345.13% 4094144349.28% at 39511.5% -2722397851.45%,
+        rgba(0, 245, 171, 0.5) 0%,
+        rgba(0, 173, 232, 0.5) 100%
+      )
+      ;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .dashboard_jt .invest-strategy .strategy-col .links-to {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dashboard_jt .invest-strategy .strategy-col .links-to div {
+    box-sizing: border-box;
+    width: 48%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #728cdf;
+    backdrop-filter: blur(12.5px);
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room {
+    box-sizing: border-box;
+  
+    background: rgba(35, 40, 75, 0.75);
+    border: 1px solid #728cdf;
+    backdrop-filter: blur(5px);
+   padding: 10px 3%;
+    border-radius: 10px;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .head {
+    display: flex;
+    width: 100%;
+  }
+  .dashboard_jt .invest-strategy .board-room .head .head-img {
+    width: 10%;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .head .head-img img {
+    width: 48px;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid #fff;
+    width: 90%;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .tot-stack{
+      width: 100%;
+      display: flex;
+      flex-direction:  row-reverse;
+      margin: 10px 0;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info-content .tags{ 
+      display: grid;
+      width: 40%;
+      flex-direction: column;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info-content .tags .tag-top{ 
+      width: 100%;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info-content .tags .tag-top button{ 
+      width: 45%;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info-content .tags button{ 
+      
+      background-color: transparent;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      padding: 5px;
+      margin: 0 5px;
+      color: #fff;
+      height: 30px;
+  }
+  
+  
+  
+  .dashboard_jt .invest-strategy .board-room .info .content {
+   }
+  
+  .dashboard_jt .invest-strategy .board-room .info .content .head_content {
+   display: flex;
+    align-items: center   ;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info .para {
+    margin-top: 5px;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info .recommend {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    width: 101px;
+    height: 16px;
+    background: rgba(0, 232, 162, 0.5);
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  .table {
+    width: 60%;
+  }
+  
+  .table .head {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .table .head {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .table .info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .dashboard_jt .invest-strategy .board-room .info-content table {
+  }
+  
+  .dashboard_jt .invest-strategy .news {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 10px;
+    background: rgba(35, 40, 75, 0.75);
+    border: 1px solid #728cdf;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+  
+  /* bomb farm */
+  
+  .dashboard_jt .bomb-farm {
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 10px 2%;
+    width: 80%;
+    height: 377.25px;
+    background: rgba(35, 40, 75, 0.75);
+    border: 1px solid #728cdf;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+  .dashboard_jt .bomb-farm .head {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dashboard_jt .bonds-container-jt {
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 10px 2%;
+    width: 80%;
+    height: 200px;
+    background:#313869bf;
+    border: 1px solid #5366a7;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+  
+  .dashboard_jt .bonds-container-jt {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard_jt .bonds-container-jt .head-show {
+    display: flex;
+  }
+  
+  .dashboard_jt .bonds-container-jt .head-show .head-img-show img {
+    width: 33px;
+    margin-right: 10px;
+  }
+  
+  .dashboard_jt .bonds-container-jt p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+   color: #ffffff;
+  }
