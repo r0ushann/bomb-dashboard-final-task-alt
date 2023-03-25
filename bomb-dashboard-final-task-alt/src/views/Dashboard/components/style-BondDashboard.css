@@ -1,0 +1,54 @@
+.bond-content-jt {
+  display:grid;
+  grid-template-columns: 30% 30% 40%;
+  margin-top: 30px;
+}
+
+.bond-content-jt .content-it {
+}
+
+.bond-content-jt .btn-content p {
+  margin: 0;
+ 
+}
+
+.bond-content-jt p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+   text-align: center;
+}
+
+.bond-content-jt div {
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+   text-align: center;
+ color: #ffffff;
+}
+
+.bond-content-jt .bond-box-btn-jt .btn-container-jt{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bond-content-jt .bond-box-btn-jt .btn-container-jt button{
+  display: flex;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  height: 30px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
