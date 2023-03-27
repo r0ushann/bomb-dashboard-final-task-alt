@@ -1,6 +1,10 @@
 /**
  * import section for Dashboard utilities
+<<<<<<< HEAD
  * import the Page component
+=======
+ 
+>>>>>>> da9803756564a274fcf71fb5d01c30236565c91d
  * accessing and importing from 
  * hooks folder
  * components
@@ -141,6 +145,7 @@ const Dashboard = () => {
       tokenName={'BShare'}
     />,
   );
+
   const { onWithdraw } = useWithdrawFromBoardroom();
   const { onReward } = useHarvestFromBoardroom();
   //const classes = useStyles();
@@ -168,7 +173,7 @@ const Dashboard = () => {
             <h3>Bomb Finance Summary</h3>
           </div>
           <div className="header-div"></div>
-          <div className="summary">
+          <div className="Summary">
             <div className="summary-table">
               <table>
                 <tr>
@@ -187,7 +192,7 @@ const Dashboard = () => {
                   <td> {roundAndFormatNumber(bombTotalSupply, 2)}</td>
                   <td>
                     <div>${bombPriceInDollars ? roundAndFormatNumber(bombPriceInDollars, 2) : '-.--'}</div>{' '}
-                    <div>{bombPriceInBNB ? bombPriceInBNB : '----'} BTC</div>
+                    <div>{bombPriceInBNB ? bombPriceInBNB : '---'} BTC</div>
                   </td>
                   <td>
                     <img src={meta} alt='meta' />
@@ -204,6 +209,7 @@ const Dashboard = () => {
                     <div>${bSharePriceInDollars ? bSharePriceInDollars : '-.--'}</div>{' '}
                     <div>{bSharePriceInBNB ? bSharePriceInBNB : '-.--'} BNB</div>
                   </td>
+
                   <td>
                     <img src={meta} alt='meta' />
                   </td>
@@ -213,6 +219,7 @@ const Dashboard = () => {
                     <img src={t_im} alt='t_image'/>
                     <span>$BBOND</span>
                   </td>
+
                   <td>{roundAndFormatNumber(tBondCirculatingSupply, 2)}</td>
                   <td>{roundAndFormatNumber(tBondTotalSupply, 2)}</td>
                   <td>
@@ -286,7 +293,7 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="tot-stack">
-                <div className="content">Total Staked:{getDisplayBalance(totalStaked)}</div>
+                <div className="content">Total Staked: {getDisplayBalance(totalStaked)}</div>
               </div>
               <div className="info-content">
                 <div className="table">
@@ -313,7 +320,7 @@ const Dashboard = () => {
                     <button onClick={onPresentDeposit}>Deposit</button>
                     <button onClick={onPresentWithdraw}>Withdraw</button>
                   </div>
-                  <button onClick={onReward}>Clain Rewards</button>
+                  <button onClick={onReward}>Claim Rewards</button>
                 </div>
               </div>
             </div>
@@ -349,7 +356,7 @@ const Dashboard = () => {
                 <div className="head_content-show">
                   <h2>Bonds</h2>
                 </div>
-                <p>BBOND can only be purchased on contraction periods, when TWAP of BOMB is below 1</p>
+                <p>BBOND can be purchased only on contraction periods, when TWAP of BOMB is below 1</p>
               </div>
             </div>
           </div>
