@@ -304,7 +304,7 @@ const Dashboard = () => {
                     <button onClick={onPresentDeposit}>Deposit</button>
                     <button onClick={onPresentWithdraw}>Withdraw</button>
                   </div>
-                  <button onClick={onReward}>Clain Rewards</button>
+                  <button onClick={onReward}>Claim Rewards</button>
                 </div>
               </div>
             </div>
