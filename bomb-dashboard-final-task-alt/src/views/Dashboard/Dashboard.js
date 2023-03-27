@@ -1,6 +1,6 @@
 /**
  * import section for Dashboard utilities
- * 
+ * import the Page component
  * accessing and importing from 
  * hooks folder
  * components
@@ -8,6 +8,8 @@
  */
 
 import React, { useMemo } from 'react';
+//import Page from components to display nav bar above the dashboard
+import Page from '../../components/Page/Page';
 //style for Dashboard
 import './Dashboard.css';
 import useCurrentEpoch from '../../hooks/useCurrentEpoch';
@@ -23,14 +25,16 @@ import useBombFinance from '../../hooks/useBombFinance';
 import moment from 'moment';
 //
 import { Link } from 'react-router-dom';
-import HomeImage from '../../assets/img/background.jpg';
-import { createGlobalStyle } from 'styled-components';
+//import HomeImage from '../../assets/img/background.jpg';
+//import { createGlobalStyle } from 'styled-components';
 import dis from '../../assets/img/discord.svg';
+//import Nav from '../../components/Nav';
+
 //
 import useFetchBoardroomAPR from '../../hooks/useFetchBoardroomAPR';
 import useBank from '../../hooks/useBank';
-import { useWallet } from 'use-wallet';
-import useEarnings from '../../hooks/useEarnings';
+//import { useWallet } from 'use-wallet';
+//import useEarnings from '../../hooks/useEarnings';
 //
 import Show from './components/BombFarmDashboard';
 import BondDash from './components/BondDash';
@@ -38,7 +42,7 @@ import BondDash from './components/BondDash';
 import { roundAndFormatNumber } from '../../0x';
 import usebShareStats from '../../hooks/usebShareStats';
 import useBondStats from '../../hooks/useBondStats';
-import useRedeemOnBoardroom from '../../hooks/useRedeemOnBoardroom';
+//import useRedeemOnBoardroom from '../../hooks/useRedeemOnBoardroom';
 import useModal from '../../hooks/useModal';
 import DepositModal from '../Boardroom/components/DepositModal';
 import useTokenBalance from '../../hooks/useTokenBalance';
@@ -60,6 +64,7 @@ import meta from '../../assets/img/metamask-fox.svg';
 import useWithdrawFromBoardroom from '../../hooks/useWithdrawFromBoardroom';
 import useHarvestFromBoardroom from '../../hooks/useHarvestFromBoardroom';
 import useTotalValueLocked from '../../hooks/useTotalValueLocked';
+//import {makeStyles, useTheme} from '@material-ui/core/styles';
 
 
 const Dashboard = () => {
@@ -119,7 +124,7 @@ const Dashboard = () => {
 
   const TVL_BOBM = useTotalValueLocked();
   const { onStake } = useStakeToBoardroom();
-  const { onRedeem } = useRedeemOnBoardroom();
+  //const { onRedeem } = useRedeemOnBoardroom();
   const tokenBalance = useTokenBalance(bombFinance.BSHARE);
 
   /**
@@ -138,6 +143,7 @@ const Dashboard = () => {
   );
   const { onWithdraw } = useWithdrawFromBoardroom();
   const { onReward } = useHarvestFromBoardroom();
+  //const classes = useStyles();
   const [onPresentWithdraw, onDismissWithdraw] = useModal(
     <WithdrawModal
       max={stakedBalance}
@@ -153,7 +159,10 @@ const Dashboard = () => {
 
     <>
        
-      <div className={'dashboard_jt'}>
+      
+     
+       <div className={'dashboard_jt'}>
+        <Page>
         <div className="bombsum">
           <div className="top-h">
             <h3>Bomb Finance Summary</h3>
@@ -164,14 +173,14 @@ const Dashboard = () => {
               <table>
                 <tr>
                   <th></th>
-                  <th>Current Supply</th>
-                  <th>Total Supply</th>
+                  <th>Current Supply </th>
+                  <th>Total Supply </th>
                   <th>Price </th>
                   <th></th>
                 </tr>
                 <tr>
                   <td className="po1">
-                    <img src={f_im} />
+                    <img src={f_im} alt=''/>
                     <span>$BOMB</span>
                   </td>
                   <td>{roundAndFormatNumber(bombCirculatingSupply, 2)}</td>
@@ -181,12 +190,12 @@ const Dashboard = () => {
                     <div>{bombPriceInBNB ? bombPriceInBNB : '----'} BTC</div>
                   </td>
                   <td>
-                    <img src={meta} />
+                    <img src={meta} alt='meta' />
                   </td>
                 </tr>
                 <tr>
                   <td className="po1">
-                    <img src={fo_im} />
+                    <img src={fo_im}  alt='fox_image'/>
                     <span>$BSHARE</span>
                   </td>
                   <td>{roundAndFormatNumber(bShareCirculatingSupply, 2)} </td>
@@ -196,12 +205,12 @@ const Dashboard = () => {
                     <div>{bSharePriceInBNB ? bSharePriceInBNB : '-.--'} BNB</div>
                   </td>
                   <td>
-                    <img src={meta} />
+                    <img src={meta} alt='meta' />
                   </td>
                 </tr>
                 <tr>
                   <td className="po1">
-                    <img src={t_im} />
+                    <img src={t_im} alt='t_image'/>
                     <span>$BBOND</span>
                   </td>
                   <td>{roundAndFormatNumber(tBondCirculatingSupply, 2)}</td>
@@ -211,7 +220,7 @@ const Dashboard = () => {
                     <div>{bSharePriceInBNB ? bSharePriceInBNB : '-.--'} BNB</div>
                   </td>
                   <td>
-                    <img src={meta} />
+                    <img src={meta} alt='meta' />
                   </td>
                   </tr>
               </table>
@@ -250,12 +259,12 @@ const Dashboard = () => {
             </div>
             <div className="links-to">
               <div>
-                <img src={dis} />
+                <img src={dis} alt='discord_image' />
                 Discord
               </div>
               <div>
-                <img  />
-                <a href={'https://docs.bomb.money/welcome-start-here/readme'} target="_blank">
+                <img alt='img' />
+                <a href={'https://docs.bomb.money/welcome-start-here/readme'}rel='noreferrer' target="_blank">
                   Read Docs
                 </a>
               </div>
@@ -263,7 +272,7 @@ const Dashboard = () => {
             <div className="board-room">
               <div className="head">
                 <div className="head-img">
-                  <img src={fo_im} />
+                  <img src={fo_im} alt='fox'/>
                 </div>
                 <div className="info">
                   <div className="content">
@@ -333,7 +342,7 @@ const Dashboard = () => {
         <div className="bonds-container-jt">
           <div className="head-show">
             <div className="head-img-show">
-              <img src={t_im} />
+              <img src={t_im}  alt='t_im'/>
             </div>
             <div className="info-show">
               <div className="content-show">
@@ -346,7 +355,9 @@ const Dashboard = () => {
           </div>
           <BondDash />
         </div>
+        </Page>
       </div>
+        
     </>
   );
 };
