@@ -1,11 +1,7 @@
 /**
  * import section for Dashboard utilities
-<<<<<<< HEAD
- * import the Page component
-=======
- 
->>>>>>> da9803756564a274fcf71fb5d01c30236565c91d
  * accessing and importing from 
+ * added navbar
  * hooks folder
  * components
  * 0x for roundandFormat
